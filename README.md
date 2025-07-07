@@ -513,7 +513,7 @@ SOFTWARE.
 ### 📧 Get in Touch
 
 - **Email**: [tanvir.dev@example.com](mailto:tanvir.dev@example.com)
-- **LinkedIn**: [Your LinkedIn Profile](https://linkedin.com/in/yourprofile)
+- **LinkedIn**: [CodeWithTanvir](https://linkedin.com/in/codewithtanvir)
 - **GitHub**: [@codewithtanvir](https://github.com/codewithtanvir)
 
 ### 🆘 Need Help?
