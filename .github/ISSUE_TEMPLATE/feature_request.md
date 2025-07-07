@@ -1,10 +1,9 @@
 ---
 name: Feature request
 about: Suggest an idea for this project
-title: '[FEATURE] '
-labels: 'enhancement'
-assignees: ''
-
+title: "[FEATURE] "
+labels: "enhancement"
+assignees: ""
 ---
 
 **Is your feature request related to a problem? Please describe.**
@@ -26,6 +25,7 @@ If you have ideas about how this could be implemented, please share them here.
 Explain how this feature would benefit users or the project.
 
 **Priority**
+
 - [ ] High - Critical functionality
 - [ ] Medium - Nice to have
 - [ ] Low - Future consideration

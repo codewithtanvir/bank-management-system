@@ -30,30 +30,35 @@ The **Bank Management System** is a feature-rich desktop application built with 
 ## ✨ Features
 
 ### 🔐 Authentication & Security
+
 - **Secure User Authentication** with BCrypt password hashing
 - **Role-Based Access Control** (Admin, Employee, Customer)
 - **Session Management** with automatic timeout
 - **Password Complexity** requirements and validation
 
 ### 💼 Account Management
+
 - **Dynamic Account Creation** with unique account number generation
 - **Multiple Account Types** support (Savings, Checking, etc.)
 - **Real-time Balance Tracking** and validation
 - **Account Status Management** (Active, Suspended, Closed)
 
 ### 💰 Transaction Processing
+
 - **Secure Deposits & Withdrawals** with business rule validation
 - **Inter-Account Transfers** with verification protocols
 - **Transaction History** with detailed audit trails
 - **Real-time Balance Updates** and notifications
 
 ### 👥 User Management
+
 - **Customer Registration** with comprehensive validation
 - **Employee Management** tools for administrative tasks
 - **User Profile Management** with update capabilities
 - **Activity Monitoring** and audit logging
 
 ### 📊 Administrative Tools
+
 - **System Dashboard** with key performance indicators
 - **User & Account Analytics** for business insights
 - **Transaction Monitoring** and reporting
@@ -77,6 +82,7 @@ The application follows a **clean, modular architecture** with clear separation 
 ```
 
 ### 🗂️ Project Structure
+
 - **`Forms/`** - User interface components and form handlers
 - **`Classes/`** - Core business logic and data models
 - **`DataBase Schema/`** - SQL scripts and database configuration
@@ -84,6 +90,7 @@ The application follows a **clean, modular architecture** with clear separation 
 - **`Documentation/`** - Comprehensive project documentation
 
 ### 🔧 Core Technologies
+
 - **Framework**: .NET Framework 4.7.2+
 - **UI Technology**: Windows Forms
 - **Database**: SQL Server / SQL Server Express
@@ -93,6 +100,7 @@ The application follows a **clean, modular architecture** with clear separation 
 ## 🚀 Installation
 
 ### Prerequisites
+
 - **Visual Studio 2019+** or **Visual Studio Code** with C# extension
 - **.NET Framework 4.7.2** or higher
 - **SQL Server 2017+** or **SQL Server Express**
@@ -101,12 +109,14 @@ The application follows a **clean, modular architecture** with clear separation 
 ### Quick Start
 
 1. **Clone the Repository**
+
    ```bash
-   git clone https://github.com/yourusername/bank-management-system.git
+   git clone https://github.com/codewithtanvir/bank-management-system.git
    cd bank-management-system
    ```
 
 2. **Database Setup**
+
    ```sql
    -- Execute the database scripts in SQL Server Management Studio
    -- 1. Run BankManagementSystem_DDL.sql to create tables
@@ -114,10 +124,11 @@ The application follows a **clean, modular architecture** with clear separation 
    ```
 
 3. **Configure Connection String**
+
    ```xml
    <!-- Update App.config with your SQL Server connection -->
    <connectionStrings>
-     <add name="BankDB" 
+     <add name="BankDB"
           connectionString="Server=localhost;Database=BankManagementSystem;Integrated Security=true;" />
    </connectionStrings>
    ```
@@ -132,6 +143,7 @@ The application follows a **clean, modular architecture** with clear separation 
 ## 📱 Usage Guide
 
 #### 🔑 Login Credentials (Demo)
+
 - **Admin**: `admin@bank.com` / `admin123`
 - **Employee**: `employee@bank.com` / `emp123`
 - **Customer**: `customer@bank.com` / `cust123`
@@ -139,12 +151,14 @@ The application follows a **clean, modular architecture** with clear separation 
 #### 🎮 Key Workflows
 
 1. **Customer Registration**
+
    - Navigate to Registration Form
    - Fill required fields with validation
    - System generates unique account number
    - Login with new credentials
 
 2. **Account Operations**
+
    - Login as Customer/Employee
    - Access account dashboard
    - Perform deposits, withdrawals, transfers
@@ -161,12 +175,15 @@ The application follows a **clean, modular architecture** with clear separation 
 <div align="center">
 
 ### 🏠 Dashboard Overview
+
 ![Dashboard](https://via.placeholder.com/800x400/0066cc/ffffff?text=Bank+Management+Dashboard)
 
 ### 💳 Transaction Interface
+
 ![Transactions](https://via.placeholder.com/800x400/28a745/ffffff?text=Transaction+Processing)
 
 ### 👤 User Management
+
 ![User Management](https://via.placeholder.com/800x400/17a2b8/ffffff?text=User+Management+Panel)
 
 </div>
@@ -174,32 +191,35 @@ The application follows a **clean, modular architecture** with clear separation 
 ## 🛠️ Technical Implementation
 
 ### 🔒 Security Features
+
 - **Password Hashing**: BCrypt with salt for secure storage
 - **Session Management**: Automatic timeout and secure logout
 - **Input Validation**: SQL injection prevention and data sanitization
 - **Role-Based Access**: Granular permissions by user type
 
 ### 🎯 Design Patterns
+
 - **Repository Pattern**: Data access abstraction
 - **Factory Pattern**: Object creation and initialization
 - **Observer Pattern**: Event-driven notifications
 - **Singleton Pattern**: Database connection management
 
 ### 📊 Data Validation Layers
+
 1. **Client-Side**: Form validation and user feedback
 2. **Business Logic**: Business rule enforcement
 3. **Database**: Constraint validation and referential integrity
 
 ## 📚 Documentation
 
-| Document | Description |
-|----------|-------------|
-| [`DEMO_README.MD`](DEMO_README.MD) | Comprehensive demo scenarios and use cases |
-| [`FUNCTIONAL_REQUIREMENTS.MD`](FUNCTIONAL_REQUIREMENTS.MD) | Detailed functional specifications |
-| [`PROJECT_SUMMARY.MD`](PROJECT_SUMMARY.MD) | Executive summary and achievements |
-| [`TEST_SCENARIOS.MD`](TEST_SCENARIOS.MD) | Testing scenarios and validation cases |
-| [`QUICK_START_REFERENCE.MD`](QUICK_START_REFERENCE.MD) | Quick reference for developers |
-| [`LOAD_SOLUTION_GUIDE.MD`](LOAD_SOLUTION_GUIDE.MD) | Setup and configuration guide |
+| Document                                                   | Description                                |
+| ---------------------------------------------------------- | ------------------------------------------ |
+| [`DEMO_README.MD`](DEMO_README.MD)                         | Comprehensive demo scenarios and use cases |
+| [`FUNCTIONAL_REQUIREMENTS.MD`](FUNCTIONAL_REQUIREMENTS.MD) | Detailed functional specifications         |
+| [`PROJECT_SUMMARY.MD`](PROJECT_SUMMARY.MD)                 | Executive summary and achievements         |
+| [`TEST_SCENARIOS.MD`](TEST_SCENARIOS.MD)                   | Testing scenarios and validation cases     |
+| [`QUICK_START_REFERENCE.MD`](QUICK_START_REFERENCE.MD)     | Quick reference for developers             |
+| [`LOAD_SOLUTION_GUIDE.MD`](LOAD_SOLUTION_GUIDE.MD)         | Setup and configuration guide              |
 
 ## 🗄️ Database Schema
 
@@ -368,13 +388,16 @@ erDiagram
 ## 🧪 Testing
 
 ### Test Coverage
+
 - **Unit Tests**: Core business logic validation
 - **Integration Tests**: Database operations and API endpoints
 - **UI Tests**: Form validation and user workflows
 - **Security Tests**: Authentication and authorization
 
 ### Test Scenarios
+
 Comprehensive test scenarios are documented in [`TEST_SCENARIOS.MD`](TEST_SCENARIOS.MD) including:
+
 - User registration and authentication flows
 - Account creation and management
 - Transaction processing and validation
@@ -383,9 +406,11 @@ Comprehensive test scenarios are documented in [`TEST_SCENARIOS.MD`](TEST_SCENAR
 ## 🚀 Demo & Live Preview
 
 ### 🎥 Video Demonstration
+
 > **Coming Soon**: Interactive video walkthrough of key features
 
 ### 🌐 Live Demo
+
 > **Note**: This is a desktop application. Contact the repository owner for a demonstration.
 
 ## 🤝 Contributing
@@ -395,26 +420,31 @@ We welcome contributions to improve the Bank Management System! Here's how you c
 ### 📋 How to Contribute
 
 1. **Fork the Repository**
+
    ```bash
-   git fork https://github.com/yourusername/bank-management-system.git
+   git fork https://github.com/codewithtanvir/bank-management-system.git
    ```
 
 2. **Create a Feature Branch**
+
    ```bash
    git checkout -b feature/amazing-feature
    ```
 
 3. **Make Your Changes**
+
    - Follow the existing code style and conventions
    - Add appropriate comments and documentation
    - Include unit tests for new features
 
 4. **Commit Your Changes**
+
    ```bash
    git commit -m "Add amazing feature"
    ```
 
 5. **Push to Your Branch**
+
    ```bash
    git push origin feature/amazing-feature
    ```
@@ -425,14 +455,18 @@ We welcome contributions to improve the Bank Management System! Here's how you c
    - Include screenshots for UI changes
 
 ### 🐛 Bug Reports
+
 If you find a bug, please create an issue with:
+
 - Clear steps to reproduce
 - Expected vs actual behavior
 - System information (OS, .NET version, etc.)
 - Screenshots if applicable
 
 ### 💡 Feature Requests
+
 For new features, please:
+
 - Check existing issues first
 - Provide detailed use cases
 - Explain the business value
@@ -477,11 +511,13 @@ SOFTWARE.
 ## 📞 Support & Contact
 
 ### 📧 Get in Touch
-- **Email**: [your.email@example.com](mailto:your.email@example.com)
+
+- **Email**: [tanvir.dev@example.com](mailto:tanvir.dev@example.com)
 - **LinkedIn**: [Your LinkedIn Profile](https://linkedin.com/in/yourprofile)
-- **GitHub**: [@yourusername](https://github.com/yourusername)
+- **GitHub**: [@codewithtanvir](https://github.com/codewithtanvir)
 
 ### 🆘 Need Help?
+
 - 📖 **Documentation**: Check our comprehensive documentation files
 - 🐛 **Issues**: Report bugs or request features via GitHub Issues
 - 💬 **Discussions**: Join conversations in GitHub Discussions
@@ -493,9 +529,9 @@ SOFTWARE.
 
 **⭐ Star this repository if you found it helpful!**
 
-[![GitHub stars](https://img.shields.io/github/stars/yourusername/bank-management-system?style=social)](https://github.com/yourusername/bank-management-system/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/yourusername/bank-management-system?style=social)](https://github.com/yourusername/bank-management-system/network)
-[![GitHub issues](https://img.shields.io/github/issues/yourusername/bank-management-system)](https://github.com/yourusername/bank-management-system/issues)
+[![GitHub stars](https://img.shields.io/github/stars/codewithtanvir/bank-management-system?style=social)](https://github.com/codewithtanvir/bank-management-system/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/codewithtanvir/bank-management-system?style=social)](https://github.com/codewithtanvir/bank-management-system/network)
+[![GitHub issues](https://img.shields.io/github/issues/codewithtanvir/bank-management-system)](https://github.com/codewithtanvir/bank-management-system/issues)
 
 **Made with ❤️ for the development community**
 
